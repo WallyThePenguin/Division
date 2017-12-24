@@ -16,15 +16,16 @@ module.exports = class extends Command {
       requiredSettings: [],
       description: 'For Valid Divinity use only',
       quotedStringSupport: false,
-      usage: '<reason|urgent> <reas:str> <author:member> [...]',
+      usage: '<reason|urgent> <reas:str> [...]',
       usageDelim: ' ',
       extendedHelp: 'No extended help available.'
     })
   }
 
-  async run (msg, [author, abs, ...reas]) {
-    if (msg.guild.id !== '393927898144440332') return msg.channel.send('Sorry this is a command only meant for EZL Staff Server.')
+  async run (msg, [abs, ...reas]) {
+    msg.delete()
     const final = await reas.join(' ')
+    if (msg.guild.id !== '393927898144440332') return msg.channel.send('Sorry this is a command only meant for EZL Staff Server.')
     switch (abs) {
       case 'reason':
         await this.client.channels.get('394352377647333386').send(final)
