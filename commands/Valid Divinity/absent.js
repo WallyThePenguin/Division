@@ -14,11 +14,11 @@ module.exports = class extends Command {
       permLevel: 0,
       botPerms: ['MANAGE_ROLES'],
       requiredSettings: [],
-      description: 'For Valid Divinity use only',
+      description: '',
       quotedStringSupport: false,
       usage: '<reason|urgent> <reas:str> [...]',
       usageDelim: ' ',
-      extendedHelp: 'No extended help available.'
+      extendedHelp: ''
     })
   }
 
