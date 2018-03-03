@@ -12,6 +12,8 @@ module.exports = class extends Command {
 
 			permLevel: 6,
 
+			aliases: ['purge'],
+
 			botPerms: ['MANAGE_MESSAGES'],
 
 			runIn: ['text'],

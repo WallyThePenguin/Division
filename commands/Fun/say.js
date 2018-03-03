@@ -9,7 +9,7 @@ module.exports = class extends Command {
       runIn: ['text', 'group'],
       cooldown: 0,
       aliases: [],
-      permLevel: 0,
+      permLevel: 6,
       botPerms: ['MANAGE_MESSAGES'],
       requiredSettings: [],
       description: 'Make the Bot say things',

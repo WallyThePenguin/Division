@@ -26,10 +26,11 @@ module.exports = class extends Command {
 
     constructor(...args) {
         super(...args, {
+            name: 'catfact',
             enabled: true,
             runIn: ['text', 'dm', 'group'],
             cooldown: 0,
-            aliases: [],
+            aliases: ['cat'],
             permLevel: 0,
             botPerms: [],
             requiredSettings: [],

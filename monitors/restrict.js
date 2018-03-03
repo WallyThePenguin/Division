@@ -12,28 +12,13 @@ module.exports = class extends Monitor {
     }
 
     run(msg) {
-        const cWords = [
-        `fuck`,
-        `arse`,
-        `ass`,
-        `asshole`,
-        `shit`,
-        `motherfucker`,
-        `slut`,
-        `dickface`,
-        `shitface`,
-        `cock`,
-        `cocksucker`,
-        `porn`,
-        `pornhub`,
-        `assface`
-    ];
-        if (cWords.some(words => msg.content.includes(words))) {
-           { msg.delete()
-msg.reply(`Bad words aren't allowed on this server...`)
-          }
+        if(message.member.roles.exists("name", "Jamie's Executive")) return
+        if(message.channel.id === "381930040528470026"){
+
         }
-    }
+          }
+        
+    
 
     async init() {
         // You can optionally define this method which will be run when the bot starts (after login, so discord data is available via this.client)

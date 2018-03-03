@@ -26,7 +26,7 @@ module.exports = class extends Command {
       .setColor(0x00AE86)
       .setThumbnail(`${usr.displayAvatarURL()}`)
       .setDescription(`**Created On:** ${usr.createdAt}`)
-      .setURL('https://discord.me/EZL')
+      .setURL('https://discord.me/ovd')
       .addField('Status',
         `**Game:** ${usr.presence.game}\n**Status:** ${usr.presence.status}`)
     return msg.reply({ embed })

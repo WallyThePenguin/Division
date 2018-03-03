@@ -24,6 +24,6 @@ module.exports = class extends Event {
       }
     }
     this.client.settings.add('users', validate, schema);
-    this.client.user.setActivity(`${this.client.guilds.size} Guilds|$help`, {type: 'WATCHING'});
+    this.client.user.setActivity(`${this.client.guilds.size} Guilds|-help`, {type: 'WATCHING'});
   }
 }
